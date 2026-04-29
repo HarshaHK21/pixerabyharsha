@@ -26,7 +26,7 @@ jobs:
   deploy:
     environment:
       name: github-pages
-      url: ${{ steps:deployment.outputs.page_url }}
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -37,12 +37,10 @@ jobs:
         with:
           node-version: '20'
 
-      # 1. Client folder ekata gihin dependencies install karanna
       - name: Install dependencies
         run: npm install
         working-directory: ./client
 
-      # 2. Client folder ekata gihin project eka build karanna
       - name: Build project
         run: npm run build
         working-directory: ./client
@@ -50,12 +48,10 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
-      # 3. Build folder eka (client/build) upload karanna
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # React nisa api ./client/build folder eka thama danne
-          path: './client/build'
+          path: './client/dist'
 
       - name: Deploy to GitHub Pages
         id: deployment
