@@ -27,7 +27,7 @@ export default function Navbar() {
             className="text-2xl font-bold bg-gradient-to-r from-neon-purple to-neon-blue bg-clip-text text-transparent"
             whileHover={{ scale: 1.05 }}
           >
-            Pixera
+            PixeraByHarsha
           </motion.a>
 
           {/* Desktop Navigation */}

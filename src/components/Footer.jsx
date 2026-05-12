@@ -139,17 +139,17 @@ export default function Footer() {
           >
             <h4 className="text-lg font-semibold mb-4 text-white">Contact</h4>
             <div className="space-y-4">
-              <a href="mailto:hello@pixera.com" className="flex items-center gap-3 text-gray-400 hover:text-neon-blue transition group">
+              <a href="https://pixerabyharshalive.vercel.app/#home" className="flex items-center gap-3 text-gray-400 hover:text-neon-blue transition group">
                 <Mail size={20} className="text-neon-purple group-hover:scale-110 transition" />
-                <span>hello@pixera.com</span>
+                <span>pixerabyharshalive.vercel.app</span>
               </a>
               <a href="tel:+1234567890" className="flex items-center gap-3 text-gray-400 hover:text-neon-blue transition group">
                 <Phone size={20} className="text-neon-purple group-hover:scale-110 transition" />
-                <span>+1 (234) 567-890</span>
+                <span>+94 78 84 88 969</span>
               </a>
               <div className="flex items-center gap-3 text-gray-400">
                 <MapPin size={20} className="text-neon-purple flex-shrink-0" />
-                <span>Creative Hub, Design City</span>
+                <span>BY harshakarunarathna.com</span>
               </div>
             </div>
           </motion.div>
