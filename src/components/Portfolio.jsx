@@ -1,6 +1,12 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Eye } from 'lucide-react';
+import brandImage from '../assets/brand.jpg';
+import uiuxImage from '../assets/uiux.jpg';
+import socialImage from '../assets/social-campaign.jpg';
+import creativeImage from '../assets/creative-direction.jpg';
+import techImage from '../assets/tech-product-design.jpg';
+import contentImage from '../assets/content-production.jpg';
 
 export default function Portfolio() {
   const [hoveredId, setHoveredId] = useState(null);
@@ -10,37 +16,37 @@ export default function Portfolio() {
       id: 1,
       title: 'Digital Brand Strategy',
       category: 'Branding',
-      image: '/src/assets/Brand (2).jpg',
+      image: brandImage,
     },
     {
       id: 2,
       title: 'Modern UI Design',
       category: 'UI/UX',
-      image: '/src/assets/UIUX (1).jpg',
+      image: uiuxImage,
     },
     {
       id: 3,
       title: 'Social Campaign',
       category: 'Marketing',
-      image: '/src/assets/Social Campaign.jpg',
+      image: socialImage,
     },
     {
       id: 4,
       title: 'Creative Direction',
       category: 'Branding',
-      image: '/src/assets/Creative Direction.jpg',
+      image: creativeImage,
     },
     {
       id: 5,
       title: 'Tech Product Design',
       category: 'Web Development',
-      image: '/src/assets/Tech Product Design.jpg',
+      image: techImage,
     },
     {
       id: 6,
       title: 'Content Production',
       category: 'Content',
-      image: '/src/assets/Content Production (1).jpg',
+      image: contentImage,
     },
   ];
 
